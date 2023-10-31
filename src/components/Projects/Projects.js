@@ -29,7 +29,7 @@ function Projects() {
               description="Regression model which predicts home prices based on the learnings from the features.House price prediction can help the developer determine the selling price of a house and can help the customer to arrange the right time to purchase a house.
                There are three factors that influence the price of a house which include physical conditions, concept and location."
               ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
@@ -40,7 +40,7 @@ function Projects() {
               title="SAM"
               description="Singulation Automation Machine, A CNC based robotic arm which solves the problem statement given by flipkart ."
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
@@ -51,7 +51,7 @@ function Projects() {
               title="Universal Power Supply"
               description="A circuit which converts AC supply (220V) to DC (12V and 5V).A universal power supply is a device that steps 110 or 220-volt AC household current down and converts it to DC so it can power an electronic device, appliance, or some other electric equipment.Laptops and household appliances, as well as audio and video and other other electronic equipment, come with their own mobile power supply so you can run them from a household circuit."
               ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              // demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
@@ -65,7 +65,7 @@ function Projects() {
               said U B Singh, HoD of Acropolis Institute, which designed the Rs 4 Lakh robot."
               
               ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
