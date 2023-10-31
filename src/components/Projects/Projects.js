@@ -26,9 +26,9 @@ function Projects() {
               imgPath={home}
               isBlog={false}
               title="House Price Prediction"
-              description="Regression model which predicts home prices based on the learnings from the features.House price prediction can help the developer determine the selling price of a house and can help the customer to arrange the right time to purchase a house.
-               There are three factors that influence the price of a house which include physical conditions, concept and location."
-              ghLink="https://github.com/soumyajit4419/Chatify"
+              description="A Regression model predicts home prices based on three key factors: physical conditions, concept, and location. 
+              This information aids developers in setting the selling price and helps buyers choose the right time to purchase a house."
+              ghLink="https://github.com/PAVIT0512/Home-Price-Predictor"
               // demoLink="https://chatify-49.web.app/"
             />
           </Col>
@@ -38,8 +38,10 @@ function Projects() {
               imgPath={sam}
               isBlog={false}
               title="SAM"
-              description="Singulation Automation Machine, A CNC based robotic arm which solves the problem statement given by flipkart ."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+              description="The Singulation Automation Machine was created for the Flipkart Grid 5.0 robotic challenge. This CNC-based robotic 
+              arm employs a suction system and camera input for precision. It efficiently rotates cardboard boxes, ensuring that the label is
+               consistently positioned on top."
+              ghLink="/project"
               // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
@@ -49,8 +51,10 @@ function Projects() {
               imgPath={universal}
               isBlog={false}
               title="Universal Power Supply"
-              description="A circuit which converts AC supply (220V) to DC (12V and 5V).A universal power supply is a device that steps 110 or 220-volt AC household current down and converts it to DC so it can power an electronic device, appliance, or some other electric equipment.Laptops and household appliances, as well as audio and video and other other electronic equipment, come with their own mobile power supply so you can run them from a household circuit."
-              ghLink="https://github.com/soumyajit4419/Editor.io"
+              description="A circuit which converts AC supply (220V) to DC (12V and 5V).A universal power supply is a device that steps 110 or
+               220-volt AC household current down and converts it to DC so it can power an electronic device, appliance, or some other electric
+                equipment."
+              ghLink="https://github.com/PAVIT0512/Universal-Power-Supply"
               // demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
@@ -60,11 +64,12 @@ function Projects() {
               imgPath={traffic}
               isBlog={false}
               title="Traffic Robot"
-              description="Robot cop manages high density traffic at Indore's SICA School Junction Indore has one of the highest vehicle densities in 
-              the country has set up an AI robot at an intersection in the city to manage the traffic on trial basis. Police commissioner reviewed it and appreciated its functioning, 
-              said U B Singh, HoD of Acropolis Institute, which designed the Rs 4 Lakh robot."
+              description="
+              An all-weather robot that bears a striking resemblance to a conventional traffic officer and possesses analogous traffic management
+              skills. It employs advanced sensors to detect traffic patterns, boasts mobility, and can adjust its path based on evolving traffic
+              conditions at intersections."
               
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
+              ghLink="/project"
               // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
@@ -75,7 +80,7 @@ function Projects() {
               isBlog={false}
               title="Ai For Social Good"
               description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              ghLink="/project"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
@@ -87,7 +92,7 @@ function Projects() {
               title="Face Recognition and Emotion Detection"
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              ghLink="/project"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
