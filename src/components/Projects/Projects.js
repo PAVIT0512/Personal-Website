@@ -6,7 +6,7 @@ import traffic from "../../Assets/Projects/traffic.jpeg";
 import emotion from "../../Assets/Projects/emotion.png";
 import universal from "../../Assets/Projects/universal.jpg";
 import sam from "../../Assets/Projects/sam.jpg";
-import suicide from "../../Assets/Projects/suicide.png";
+import charm from "../../Assets/Projects/charm.jpg";
 import home from "../../Assets/Projects/home.jpg";
 
 function Projects() {
@@ -76,10 +76,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={charm}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              title="CHARM"
+              description="The Computerized Hardware Automated Reception Machine is an AI-driven robot that serves as a receptionist for a
+              college. It interacts with visitors, provides information about the institution, and offers responses to user queries using
+               its hardware-based artificial intelligence."
               ghLink="/project"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
@@ -92,7 +94,7 @@ function Projects() {
               title="Face Recognition and Emotion Detection"
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="/project"
+              ghLink="https://github.com/PAVIT0512/Face-Recognition"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>

@@ -10,15 +10,14 @@ import {
   DiGit,
 } from "react-icons/di";
 import {
-  SiFirebase,
+  SiAutodesk,
 	SiRos,
   SiNextdotjs,
-  SiArduino,
-	SiRaspberrypi,
   SiMysql,
   SiOpencv,
   SiPytorch,
-  SiTensorflow
+  SiTensorflow,
+  SiFlask
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -26,52 +25,53 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+      <SiRos />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+      <h1>Gazebo</h1>
+      <h1>Simulator</h1>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRos />
+      <SiOpencv />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+      < SiTensorflow/> 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+      <SiPytorch />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRaspberrypi />
+      <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+      <CgCPlusPlus /> 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+      <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+      <DiReact /> 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+      <SiNextdotjs /> 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiArduino />
+      <DiNodejs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMysql />
+      < SiFlask/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+      <DiMongodb /> 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiOpencv />
+      <SiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPytorch />
+      < SiAutodesk/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        < SiTensorflow/>
+      <DiGit />
       </Col>
     </Row>
   );
