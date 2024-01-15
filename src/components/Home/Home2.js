@@ -48,7 +48,7 @@ I'm <span className="purple">Pavit Singh Narang</span>, an <span className="purp
               </li>
               <li className="social-icons">
                 <a
-                  href="/"
+                  href="https://pavit0512.github.io/Personal-Website/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -68,7 +68,7 @@ I'm <span className="purple">Pavit Singh Narang</span>, an <span className="purp
               </li>
               <li className="social-icons">
                 <a
-                  href="/"
+                  href="https://pavit0512.github.io/Personal-Website/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
