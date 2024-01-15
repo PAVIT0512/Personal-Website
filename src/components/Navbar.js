@@ -94,7 +94,6 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 href="https://pavit0512.github.io/Personal-Website/"
-                target="_blank"
                 rel="noreferrer"
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
