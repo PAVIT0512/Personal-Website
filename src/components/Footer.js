@@ -33,9 +33,8 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="/"
+                href="https://pavit0512.github.io/Personal-Website/"
                 style={{ color: "white" }}
-                target="_blank" 
                 rel="noopener noreferrer"
               >
                 <AiFillYoutube />
@@ -55,7 +54,6 @@ function Footer() {
               <a
                 href="https://pavit0512.github.io/Personal-Website/"
                 style={{ color: "white" }}
-                target="_blank" 
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />
