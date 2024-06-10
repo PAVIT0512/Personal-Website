@@ -1,11 +1,21 @@
 {
   "files": {
-    "main.css": "/Personal-Website/static/css/main.dc9ce70d.css",
-    "main.js": "/Personal-Website/static/js/main.7653b574.js",
+    "main.css": "/Personal-Website/static/css/main.fd788cfa.css",
+    "main.js": "/Personal-Website/static/js/main.ff4389af.js",
     "static/js/415.4d6acbeb.chunk.js": "/Personal-Website/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Personal-Website/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Coursera Certificate.jpg": "/Personal-Website/static/media/Coursera Certificate.9bdfd106f367ae128991.jpg",
+    "static/media/AI Coursera.jpg": "/Personal-Website/static/media/AI Coursera.057cc50b871b3a8f33df.jpg",
+    "static/media/Python Language Certificate.jpg": "/Personal-Website/static/media/Python Language Certificate.49e1612cb23c3a5fc0e0.jpg",
+    "static/media/Robotics and embedded systems Training Certificate.jpg": "/Personal-Website/static/media/Robotics and embedded systems Training Certificate.5d2329392f2eccbe2544.jpg",
+    "static/media/ROS with arduino.jpg": "/Personal-Website/static/media/ROS with arduino.60a9312f2a0c1392c3d4.jpg",
+    "static/media/Robotics and embedded systems Certificate.jpg": "/Personal-Website/static/media/Robotics and embedded systems Certificate.c6df207871874b507612.jpg",
+    "static/media/Flipkart Certificate.jpg": "/Personal-Website/static/media/Flipkart Certificate.d563ee497ef7d141afce.jpg",
     "static/media/emotion.png": "/Personal-Website/static/media/emotion.eabfc16e7a146ab15778.png",
+    "static/media/Opencv Certificate.jpg": "/Personal-Website/static/media/Opencv Certificate.944de3dd934a2eef1a66.jpg",
+    "static/media/AI Skillup.jpg": "/Personal-Website/static/media/AI Skillup.d01c629e6e1014f8afb8.jpg",
     "static/media/sam.jpg": "/Personal-Website/static/media/sam.1eafb6aac02717099fb0.jpg",
+    "static/media/Certificate.jpg": "/Personal-Website/static/media/Certificate.d4ae7f6ba2f1aaca39bb.jpg",
     "static/media/universal.jpg": "/Personal-Website/static/media/universal.f6bece65cdb6f2397034.jpg",
     "static/media/home-main.svg": "/Personal-Website/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
     "static/media/about.png": "/Personal-Website/static/media/about.aee0f771fbfc1e7b8fa8.png",
@@ -17,13 +27,13 @@
     "static/media/avatar.svg": "/Personal-Website/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
     "static/media/pre.svg": "/Personal-Website/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/Personal-Website/index.html",
-    "main.dc9ce70d.css.map": "/Personal-Website/static/css/main.dc9ce70d.css.map",
-    "main.7653b574.js.map": "/Personal-Website/static/js/main.7653b574.js.map",
+    "main.fd788cfa.css.map": "/Personal-Website/static/css/main.fd788cfa.css.map",
+    "main.ff4389af.js.map": "/Personal-Website/static/js/main.ff4389af.js.map",
     "415.4d6acbeb.chunk.js.map": "/Personal-Website/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Personal-Website/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc9ce70d.css",
-    "static/js/main.7653b574.js"
+    "static/css/main.fd788cfa.css",
+    "static/js/main.ff4389af.js"
   ]
 }
