@@ -11,6 +11,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineFileText, // import the new icon
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -39,7 +40,6 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="https://pavit0512.github.io/Personal-Website/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
-				
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -85,6 +85,19 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/certificates"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFileText // use the new icon here
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Certificates
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
@@ -98,9 +111,7 @@ function NavBar() {
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
-            </Nav.Item> 
-
-            
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

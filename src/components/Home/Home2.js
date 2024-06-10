@@ -2,26 +2,32 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiFillYoutube,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillYoutube, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Experience from "./Experience"; // Import the Experience component
 
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-				<Col md={8} className="home-about-description">
-  <h1 style={{ fontSize: "2.6em" }}>
-    LET ME <span className="purple"> INTRODUCE </span> MYSELF
-  </h1>
-  
-I'm <span className="purple">Pavit Singh Narang</span>, an <span className="purple">Ardent Roboticist</span> with a passion for enhancing lives. I explore ideas to improve life through <span className="purple">Robotics</span>. Beyond the confines of the laboratory, I immerse myself in the world of <span className="purple">nature</span> and embrace my fervor for <span className="purple">sports and athleticism </span>. I'm committed to creating <span className="purple">cutting-edge robots</span> and ready for the next exciting challenge! 🤖🌟🏀
-</Col>
-
+          <Col md={8} className="home-about-description">
+            <h1 style={{ fontSize: "2.6em" }}>
+              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+            </h1>
+            <p>
+              I'm <span className="purple">Pavit Singh Narang</span>, an{" "}
+              <span className="purple">Ardent Roboticist</span> with a passion
+              for enhancing lives. I explore ideas to improve life through{" "}
+              <span className="purple">Robotics</span>. Beyond the confines of
+              the laboratory, I immerse myself in the world of{" "}
+              <span className="purple">nature</span> and embrace my fervor for{" "}
+              <span className="purple">sports and athleticism </span>. I'm
+              committed to creating{" "}
+              <span className="purple">cutting-edge robots</span> and ready for
+              the next exciting challenge! 🤖🌟🏀
+            </p>
+          </Col>
 
           <Col md={4} className="myAvtar">
             <Tilt>
@@ -29,6 +35,7 @@ I'm <span className="purple">Pavit Singh Narang</span>, an <span className="purp
             </Tilt>
           </Col>
         </Row>
+        <Experience /> {/* Include the Experience component here */}
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>

@@ -398,6 +398,73 @@ button:focus {
   color: #700c86 !important;
 }
 
+.experience-section {
+  position: relative;
+  padding: 100px 0;
+  /* background-image: var(--section-background-color); */
+  text-align: center;
+}
+
+.experience-heading {
+  font-size: 2.6em;
+  color: white;
+}
+
+.experience-description {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: white; /* Change line color to white */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px; /* Center the line */
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 12px; /* Adjust circle size */
+  height: 12px; /* Adjust circle size */
+  background-color: white;
+  border-radius: 50%;
+  left: 50%; /* Center the circle */
+  top: 0; /* Align circle with text */
+  transform: translateX(-50%); /* Move circle left by half its size */
+}
+
+.timeline-item-content {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 6px;
+  color: white;
+  display: inline-block;
+  width: 45%; /* Adjust content width */
+}
+
+
+
 /* --------- */
 /* Footer */
 /* --------- */
@@ -532,6 +599,69 @@ button:focus {
   box-shadow: none !important;
 }
 .project-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+}
+
+
+/* --------- */
+/* Certificates */
+/* --------- */
+.cert-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.cert-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.cert-card-view {
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+.cert-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+
+.card-img-top {
+  padding: 20px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
+}
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #623686 !important;
+  border-color: #623686 !important;
+}
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #6d20c5d7 !important;
+  border-color: #6d20c5d7 !important;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.cert-heading {
   color: white !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
