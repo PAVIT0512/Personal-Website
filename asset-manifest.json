@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Personal-Website/static/css/main.fd788cfa.css",
-    "main.js": "/Personal-Website/static/js/main.ff4389af.js",
+    "main.js": "/Personal-Website/static/js/main.0956e568.js",
     "static/js/415.4d6acbeb.chunk.js": "/Personal-Website/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Personal-Website/static/js/787.1ed0c42c.chunk.js",
     "static/media/Coursera Certificate.jpg": "/Personal-Website/static/media/Coursera Certificate.9bdfd106f367ae128991.jpg",
@@ -28,12 +28,12 @@
     "static/media/pre.svg": "/Personal-Website/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/Personal-Website/index.html",
     "main.fd788cfa.css.map": "/Personal-Website/static/css/main.fd788cfa.css.map",
-    "main.ff4389af.js.map": "/Personal-Website/static/js/main.ff4389af.js.map",
+    "main.0956e568.js.map": "/Personal-Website/static/js/main.0956e568.js.map",
     "415.4d6acbeb.chunk.js.map": "/Personal-Website/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Personal-Website/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd788cfa.css",
-    "static/js/main.ff4389af.js"
+    "static/js/main.0956e568.js"
   ]
 }
