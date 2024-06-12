@@ -45,7 +45,7 @@ function Certificates() {
           <Col md={4} className="cert-card">
             <CertificateCards
               imgPath={cert3}
-              title="Sensors Certificate by University of Colorado"
+              title="Sensors Study Certificate by University of Colorado"
               certLink="https://linktocert3.com"
             />
           </Col>
