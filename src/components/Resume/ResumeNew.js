@@ -9,11 +9,25 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
+  const [numPages, setNumPages] = useState(null);
+  const [width, setWidth] = useState(window.innerWidth);
+  const isMobile = width <= 768; // Define mobile width threshold
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+
+  const getPageScale = () => {
+    return isMobile ? 0.5 : 1.0; // Adjust scale factor for mobile
+  };
 
   return (
     <div>
@@ -32,9 +46,15 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
+          <div className="resume-scroll-container">
+            <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
+              {Array.from(new Array(numPages), (el, index) => (
+                <div key={`page_${index + 1}`} className="page-container">
+                  <Page pageNumber={index + 1} scale={getPageScale()} />
+                </div>
+              ))}
+            </Document>
+          </div>
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
