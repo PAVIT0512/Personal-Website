@@ -41,7 +41,7 @@ function Projects() {
               description="The Singulation Automation Machine was created for the Flipkart Grid 5.0 robotic challenge. This CNC-based robotic 
               arm employs a suction system and camera input for precision. It efficiently rotates cardboard boxes, ensuring that the label is
                consistently positioned on top."
-              ghLink="/project"
+              // ghLink="/project"
               // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
@@ -69,7 +69,7 @@ function Projects() {
               skills. It employs advanced sensors to detect traffic patterns, boasts mobility, and can adjust its path based on evolving traffic
               conditions at intersections."
               
-              ghLink="/project"
+              // ghLink="/project"
               // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
@@ -82,7 +82,7 @@ function Projects() {
               description="The Computerized Hardware Automated Reception Machine is an AI-driven robot that serves as a receptionist for a
               college. It interacts with visitors, provides information about the institution, and offers responses to user queries using
                its hardware-based artificial intelligence."
-              ghLink="/project"
+              // ghLink="/project"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
@@ -95,7 +95,7 @@ function Projects() {
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               ghLink="https://github.com/PAVIT0512/Face-Recognition"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              // demoLink="https://blogs.soumya-jit.tech/"  
             />
           </Col>
         </Row>
