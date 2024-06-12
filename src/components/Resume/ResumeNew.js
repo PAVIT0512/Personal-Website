@@ -26,7 +26,7 @@ function ResumeNew() {
   }
 
   const getPageScale = () => {
-    return isMobile ? 0.5 : 1.0; // Adjust scale factor for mobile
+    return isMobile ? 0.6 : 1.0; // Adjust scale factor for mobile
   };
 
   return (
