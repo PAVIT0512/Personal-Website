@@ -1,6 +1,6 @@
 how to build:-
-npm install
 npm start
+npm install
 npm install gh-pages --save-dev
 npm run deploy
 
