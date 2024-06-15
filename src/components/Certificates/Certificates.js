@@ -12,6 +12,7 @@ import cert7 from "../../Assets/Certificates/Python Language Certificate.jpg";
 import cert8 from "../../Assets/Certificates/Robotics and embedded systems Certificate.jpg";
 import cert9 from "../../Assets/Certificates/Robotics and embedded systems Training Certificate.jpg";
 import cert10 from "../../Assets/Certificates/ROS with arduino.jpg";
+import cert11 from "../../Assets/Certificates/IIC certificate.png";
 
 
 function Certificates() {
@@ -103,6 +104,14 @@ function Certificates() {
               imgPath={cert10}
               title="ROS With Arduino By Udemy"
               certLink="https://linktocert10.com"
+            />
+          </Col>
+
+          <Col md={4} className="cert-card">
+            <CertificateCards
+              imgPath={cert11}
+              title="IIC Regional Meet"
+              certLink="https://linktocert11.com"
             />
           </Col>
         </Row>
