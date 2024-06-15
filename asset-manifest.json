@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Personal-Website/static/css/main.8a7c3146.css",
-    "main.js": "/Personal-Website/static/js/main.17efc6e9.js",
+    "main.js": "/Personal-Website/static/js/main.67358594.js",
     "static/js/415.4d6acbeb.chunk.js": "/Personal-Website/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Personal-Website/static/js/787.1ed0c42c.chunk.js",
     "static/media/Coursera Certificate.jpg": "/Personal-Website/static/media/Coursera Certificate.9bdfd106f367ae128991.jpg",
@@ -15,6 +15,7 @@
     "static/media/Opencv Certificate.jpg": "/Personal-Website/static/media/Opencv Certificate.944de3dd934a2eef1a66.jpg",
     "static/media/AI Skillup.jpg": "/Personal-Website/static/media/AI Skillup.d01c629e6e1014f8afb8.jpg",
     "static/media/sam.jpg": "/Personal-Website/static/media/sam.1eafb6aac02717099fb0.jpg",
+    "static/media/IIC certificate.png": "/Personal-Website/static/media/IIC certificate.593d395b5d2ca74bb05c.png",
     "static/media/Certificate.jpg": "/Personal-Website/static/media/Certificate.d4ae7f6ba2f1aaca39bb.jpg",
     "static/media/Resume.pdf": "/Personal-Website/static/media/Resume.f726588f316b5c7fe4e5.pdf",
     "static/media/universal.jpg": "/Personal-Website/static/media/universal.f6bece65cdb6f2397034.jpg",
@@ -28,12 +29,12 @@
     "static/media/pre.svg": "/Personal-Website/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/Personal-Website/index.html",
     "main.8a7c3146.css.map": "/Personal-Website/static/css/main.8a7c3146.css.map",
-    "main.17efc6e9.js.map": "/Personal-Website/static/js/main.17efc6e9.js.map",
+    "main.67358594.js.map": "/Personal-Website/static/js/main.67358594.js.map",
     "415.4d6acbeb.chunk.js.map": "/Personal-Website/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Personal-Website/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8a7c3146.css",
-    "static/js/main.17efc6e9.js"
+    "static/js/main.67358594.js"
   ]
 }
