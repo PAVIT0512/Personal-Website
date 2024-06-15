@@ -110,7 +110,7 @@ function Certificates() {
           <Col md={4} className="cert-card">
             <CertificateCards
               imgPath={cert11}
-              title="IIC Regional Meet"
+              title="IIC Regional Meet Certificate"
               certLink="https://linktocert11.com"
             />
           </Col>
