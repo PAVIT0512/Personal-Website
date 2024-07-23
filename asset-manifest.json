@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/Personal-Website/static/css/main.8a7c3146.css",
-    "main.js": "/Personal-Website/static/js/main.4af14075.js",
+    "main.css": "/Personal-Website/static/css/main.c11be406.css",
+    "main.js": "/Personal-Website/static/js/main.2bd33916.js",
     "static/js/415.4d6acbeb.chunk.js": "/Personal-Website/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Personal-Website/static/js/787.1ed0c42c.chunk.js",
+    "static/media/home_video.mp4": "/Personal-Website/static/media/home_video.11a4ac8cf47b7a9b721f.mp4",
+    "static/media/RVIZ2 Simulation.webm": "/Personal-Website/static/media/RVIZ2 Simulation.285f097c7aa0fcaee6a0.webm",
+    "static/media/Universal_Power_supply.png": "/Personal-Website/static/media/Universal_Power_supply.2e5669fd094e6dce4c3e.png",
     "static/media/Coursera Certificate.jpg": "/Personal-Website/static/media/Coursera Certificate.9bdfd106f367ae128991.jpg",
     "static/media/AI Coursera.jpg": "/Personal-Website/static/media/AI Coursera.057cc50b871b3a8f33df.jpg",
     "static/media/Python Language Certificate.jpg": "/Personal-Website/static/media/Python Language Certificate.49e1612cb23c3a5fc0e0.jpg",
@@ -16,25 +19,32 @@
     "static/media/AI Skillup.jpg": "/Personal-Website/static/media/AI Skillup.d01c629e6e1014f8afb8.jpg",
     "static/media/sam.jpg": "/Personal-Website/static/media/sam.1eafb6aac02717099fb0.jpg",
     "static/media/IIC certificate.png": "/Personal-Website/static/media/IIC certificate.593d395b5d2ca74bb05c.png",
+    "static/media/carousel4.jpg": "/Personal-Website/static/media/carousel4.57e423599baac6ee152f.jpg",
     "static/media/Certificate.jpg": "/Personal-Website/static/media/Certificate.d4ae7f6ba2f1aaca39bb.jpg",
+    "static/media/carousel1.jpg": "/Personal-Website/static/media/carousel1.5fba2afa3a0de5abbfb1.jpg",
+    "static/media/carousel6.jpg": "/Personal-Website/static/media/carousel6.6121d51d8d396ed50b87.jpg",
     "static/media/Resume.pdf": "/Personal-Website/static/media/Resume.f726588f316b5c7fe4e5.pdf",
-    "static/media/universal.jpg": "/Personal-Website/static/media/universal.f6bece65cdb6f2397034.jpg",
+    "static/media/carousel5.jpg": "/Personal-Website/static/media/carousel5.3cab7ed05bcc6246bbf1.jpg",
+    "static/media/turtlebot3.png": "/Personal-Website/static/media/turtlebot3.1b621d4d518ca78963da.png",
     "static/media/home-main.svg": "/Personal-Website/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
+    "static/media/trafficrobot1.jpg": "/Personal-Website/static/media/trafficrobot1.71a77923344747b7f135.jpg",
     "static/media/about.png": "/Personal-Website/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/trafficrobot2.jpg": "/Personal-Website/static/media/trafficrobot2.8737d5292cecf8f90ee4.jpg",
     "static/media/home.jpg": "/Personal-Website/static/media/home.a1a8488b69b21a40ee37.jpg",
     "static/media/traffic.jpeg": "/Personal-Website/static/media/traffic.d6c6a9eb87889d0dc83c.jpeg",
-    "static/media/charm.jpg": "/Personal-Website/static/media/charm.11c42a8d1b7bb39c551f.jpg",
+    "static/media/charm.png": "/Personal-Website/static/media/charm.1100047e2ae0e797a2a4.png",
     "static/media/home-bg.jpg": "/Personal-Website/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/charm_main.png": "/Personal-Website/static/media/charm_main.043be59c935a66b0e272.png",
     "static/media/avatar.svg": "/Personal-Website/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
     "static/media/pre.svg": "/Personal-Website/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/Personal-Website/index.html",
-    "main.8a7c3146.css.map": "/Personal-Website/static/css/main.8a7c3146.css.map",
-    "main.4af14075.js.map": "/Personal-Website/static/js/main.4af14075.js.map",
+    "main.c11be406.css.map": "/Personal-Website/static/css/main.c11be406.css.map",
+    "main.2bd33916.js.map": "/Personal-Website/static/js/main.2bd33916.js.map",
     "415.4d6acbeb.chunk.js.map": "/Personal-Website/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Personal-Website/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a7c3146.css",
-    "static/js/main.4af14075.js"
+    "static/css/main.c11be406.css",
+    "static/js/main.2bd33916.js"
   ]
 }
