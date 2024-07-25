@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/Personal-Website/static/css/main.c11be406.css",
-    "main.js": "/Personal-Website/static/js/main.a9055a3c.js",
+    "main.js": "/Personal-Website/static/js/main.b5f7fa6c.js",
     "static/js/415.4d6acbeb.chunk.js": "/Personal-Website/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Personal-Website/static/js/787.1ed0c42c.chunk.js",
     "static/media/home_video.mp4": "/Personal-Website/static/media/home_video.11a4ac8cf47b7a9b721f.mp4",
+    "static/media/Real_time_object_detection.mp4": "/Personal-Website/static/media/Real_time_object_detection.5d613bc6cb3ef0e45fa9.mp4",
+    "static/media/Object_Detection_image.jpg": "/Personal-Website/static/media/Object_Detection_image.0d5d52f21f49deb06271.jpg",
     "static/media/RVIZ2 Simulation.webm": "/Personal-Website/static/media/RVIZ2 Simulation.285f097c7aa0fcaee6a0.webm",
     "static/media/Universal_Power_supply.png": "/Personal-Website/static/media/Universal_Power_supply.2e5669fd094e6dce4c3e.png",
     "static/media/Coursera Certificate.jpg": "/Personal-Website/static/media/Coursera Certificate.9bdfd106f367ae128991.jpg",
@@ -39,12 +41,12 @@
     "static/media/pre.svg": "/Personal-Website/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/Personal-Website/index.html",
     "main.c11be406.css.map": "/Personal-Website/static/css/main.c11be406.css.map",
-    "main.a9055a3c.js.map": "/Personal-Website/static/js/main.a9055a3c.js.map",
+    "main.b5f7fa6c.js.map": "/Personal-Website/static/js/main.b5f7fa6c.js.map",
     "415.4d6acbeb.chunk.js.map": "/Personal-Website/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Personal-Website/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c11be406.css",
-    "static/js/main.a9055a3c.js"
+    "static/js/main.b5f7fa6c.js"
   ]
 }
