@@ -24,7 +24,7 @@ function HousePricePrediction(props) {
       <Particle style={{ position: "absolute", zIndex: 1 }} />
       <Container style={{ position: "relative", zIndex: 2 }}>
         <div className="image-container">
-          <img src={houseImage} alt="House" />
+          <img src={houseImage} alt="House" className="responsive-image"/>
         </div>
         {/* Button to open video */}
         <Button

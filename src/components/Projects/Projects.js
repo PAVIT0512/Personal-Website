@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import traffic from "../../Assets/Projects/traffic.jpeg";
 import emotion from "../../Assets/Projects/emotion.png";
+import object_detection_image from "../../Assets/Projects/Object_Detection_image.jpg";
 import universal from "../../Assets/Projects/Universal_Power_supply.png";
 import sam from "../../Assets/Projects/sam.jpg";
 import charm from "../../Assets/Projects/charm_main.png";
@@ -56,12 +57,20 @@ function Projects() {
       description: "The Computerized Hardware Automated Reception Machine 🤖 is an AI-driven robot that serves as a receptionist for a college 🏫. It interacts with visitors, provides information about the institution 🏛️, and offers responses to user queries using its hardware-based artificial intelligence 💡.",
       ghLink: "https://github.com/PAVIT0512/C.H.A.R.M",
     },
+
     {
       id: "face-recognition",
       imgPath: emotion,
       title: "Face Recognition and Emotion Detection",
       description: "This is a trained CNN classifier using Keras with a TensorFlow backend, capable of successfully predicting various human emotions 😊😢😡😱.Using OpenCV and face_recognition, I detect faces in real-time video, pass them to the classifier, and display the predicted emotion with text and emojis.",
       ghLink: "https://github.com/PAVIT0512/Face_Recognition_and_Emotion",
+    },
+    {
+      id: "object-detection",
+      imgPath: object_detection_image,
+      title: "Real Time Object Detection",
+      description: "Real-time object detection using the MobileNetSSD model with OpenCV and a webcam 🎥. It detects and classifies objects in video frames captured by the webcam 📸, drawing bounding boxes and labels 🏷️ around detected objects with a confidence score 📊.",
+      ghLink: "https://github.com/PAVIT0512/Object_Detection",
     },
   ];
 

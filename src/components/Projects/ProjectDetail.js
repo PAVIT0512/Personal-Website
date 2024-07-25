@@ -32,6 +32,11 @@ const projectData = {
     description: "Details about the CHARM project.",
     // Add more details
   },
+  "object-detection": {
+    title: "Real Time Object Detection",
+    description: "Details about the Turtlebot3 Stop Node project.",
+    // Add more details
+  },
   "face-recognition": {
     title: "Face Recognition and Emotion Detection",
     description: "Details about the Face Recognition and Emotion Detection project.",

@@ -21,8 +21,8 @@ function HousePricePrediction(props) {
     <Container fluid className="project-section">
       <Particle style={{ position: "absolute", zIndex: 1 }} />
       <Container style={{ position: "relative", zIndex: 2 }}>
-        <div className="image-container">
-          <img src={houseImage} alt="House" />
+        <div className="image-container" >
+          <img src={houseImage} alt="House" className="responsive-image"  />
         </div>
         <h1 className="project-heading">
           <strong className="purple">House Price Prediction</strong>

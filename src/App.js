@@ -14,6 +14,7 @@ import TrafficRobot from "./components/Projects/TrafficRobot";
 import CHARM from "./components/Projects/CHARM";
 import FaceRecognition from "./components/Projects/FaceRecognition";
 import Turtlebot from "./components/Projects/Turtlebot_Stop";
+import ObjectDetection from "./components/Projects/Object_detection";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
@@ -47,6 +48,7 @@ function App() {
           <Route path="/project/charm" element={<CHARM />} />
           <Route path="/project/face-recognition" element={<FaceRecognition />} />
           <Route path="/project/Turtlebot-Stop" element={<Turtlebot />} />
+          <Route path="/project/object-detection" element={<ObjectDetection />} />
           <Route path="/about" element={<About />} />
           <Route path="/certificates" element={<Certificates />} />
           <Route path="/resume" element={<Resume />} />
