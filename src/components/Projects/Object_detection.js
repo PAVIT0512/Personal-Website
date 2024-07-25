@@ -58,8 +58,7 @@ function HousePricePrediction(props) {
   <strong className="purple">🚀 Usage</strong>
   <ol>
     <li>Clone the repository:
-      <pre><code>git clone &lt;repository-url&gt;
-cd &lt;repository-directory&gt;</code></pre>
+      <pre><code>git clone https://github.com/PAVIT0512/Object_Detection.git</code></pre>
     </li>
     <li>Run the script:
       <pre><code>python object_detection.py</code></pre>

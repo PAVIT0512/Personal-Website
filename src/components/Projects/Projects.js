@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import traffic from "../../Assets/Projects/traffic.jpeg";
 import emotion from "../../Assets/Projects/emotion.png";
 import object_detection_image from "../../Assets/Projects/Object_Detection_image.jpg";
+import object_tracking_image from "../../Assets/Projects/Object_tracking.png";
 import universal from "../../Assets/Projects/Universal_Power_supply.png";
 import sam from "../../Assets/Projects/sam.jpg";
 import charm from "../../Assets/Projects/charm_main.png";
@@ -72,6 +73,14 @@ function Projects() {
       description: "Real-time object detection using the MobileNetSSD model with OpenCV and a webcam 🎥. It detects and classifies objects in video frames captured by the webcam 📸, drawing bounding boxes and labels 🏷️ around detected objects with a confidence score 📊.",
       ghLink: "https://github.com/PAVIT0512/Object_Detection",
     },
+    {
+      id: "object-tracking",
+      imgPath: object_tracking_image,
+      title: "Object Tracking",
+      description: "This code performs real-time object detection and tracking on video. 🚗👀 It uses background subtraction to detect moving objects and a Euclidean distance-based tracker to follow their movement, assigning unique IDs to each object. 📹🔍 The results, including bounding boxes and IDs, are displayed in real-time. 🎯",
+      ghLink: "https://github.com/PAVIT0512/Object_Tracking",
+    },
+    
   ];
 
   return (
