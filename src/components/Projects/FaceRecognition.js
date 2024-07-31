@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Button } from "react-bootstrap";
 import "../../style.css";
 import Particle from "../Particle";
@@ -10,6 +10,7 @@ const videoSource = `https://drive.google.com/file/d/${videoFileId}/preview`;
 
 function HousePricePrediction(props) {
   const [showVideo, setShowVideo] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
 
   const openVideo = () => {
     setShowVideo(true);
@@ -19,11 +20,42 @@ function HousePricePrediction(props) {
     setShowVideo(false);
   };
 
+  const handleResize = () => {
+    setIsLargeScreen(window.innerWidth >= 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const videoContainerStyle = {
+    position: "relative",
+    width: isLargeScreen ? "640px" : "90%",
+    maxWidth: isLargeScreen ? "none" : "640px",
+    paddingBottom: isLargeScreen ? "0" : "56.25%", // 16:9 aspect ratio
+    height: isLargeScreen ? "480px" : "0",
+    overflow: "hidden",
+    borderRadius: "10px",
+    boxShadow: "0px 0px 100px rgba(128, 0, 128, 0.9)",
+  };
+
+  const iframeStyle = {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: isLargeScreen ? "640px" : "100%",
+    height: isLargeScreen ? "480px" : "100%",
+    borderRadius: "10px",
+  };
+
   return (
     <Container fluid className="project-section">
       <Particle style={{ position: "absolute", zIndex: 1 }} />
       <Container style={{ position: "relative", zIndex: 2 }}>
-      <div className="image-container">
+        <div className="image-container">
           <img src={houseImage} alt="Emotion Detection" className="responsive-image" />
         </div>
         {/* Button to open video */}
@@ -47,7 +79,6 @@ function HousePricePrediction(props) {
           <strong className="purple">Emotion Detection and Face Recognition System</strong>
         </h1>
         <p style={{ color: "white", textAlign: "left" }}>
-          
           <br></br>
           <br></br>
           This is a trained CNN classifier using Keras with a TensorFlow backend, capable of successfully predicting various human emotions 😊😢😡😱. The classifier can distinguish between multiple emotional states such as happiness, sadness, anger, and fear. After training the model, I integrated it with OpenCV and the face_recognition library to detect faces in real-time video streams.
@@ -137,7 +168,7 @@ function HousePricePrediction(props) {
             style={{
               position: "fixed",
               zIndex: 9999,
-              top: "50px",
+              top: 0,
               left: 0,
               right: 0,
               bottom: 0,
@@ -147,26 +178,15 @@ function HousePricePrediction(props) {
               alignItems: "center",
             }}
           >
-            <div
-              className="video-container"
-              style={{
-                maxWidth: "640px",
-                maxHeight: "480px",
-                position: "relative",
-                boxShadow: "0px 0px 100px rgba(128, 0, 128, 0.9)",
-                paddingTop: "0px",
-                borderRadius: "10px",
-              }}
-            >
+            <div className="video-container" style={videoContainerStyle}>
               <iframe
-                width="640px"
-                height="480px"
+                className="responsive-iframe"
                 src={videoSource}
                 frameBorder="0"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
                 title="Video"
-                style={{ borderRadius: "10px" }}
+                style={iframeStyle}
               ></iframe>
               <button
                 className="close-btn purple"

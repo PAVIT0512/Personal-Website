@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Button } from "react-bootstrap";
 import "../../style.css";
 import Particle from "../Particle";
@@ -10,6 +10,7 @@ const videoSource = `https://drive.google.com/file/d/${videoFileId}/preview`;
 
 function HousePricePrediction(props) {
   const [showVideo, setShowVideo] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
 
   const openVideo = () => {
     setShowVideo(true);
@@ -19,12 +20,43 @@ function HousePricePrediction(props) {
     setShowVideo(false);
   };
 
+  const handleResize = () => {
+    setIsLargeScreen(window.innerWidth >= 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const videoContainerStyle = {
+    position: "relative",
+    width: isLargeScreen ? "640px" : "90%",
+    maxWidth: isLargeScreen ? "none" : "640px",
+    paddingBottom: isLargeScreen ? "0" : "56.25%", // 16:9 aspect ratio
+    height: isLargeScreen ? "480px" : "0",
+    overflow: "hidden",
+    borderRadius: "10px",
+    boxShadow: "0px 0px 100px rgba(128, 0, 128, 0.9)",
+  };
+
+  const iframeStyle = {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: isLargeScreen ? "640px" : "100%",
+    height: isLargeScreen ? "480px" : "100%",
+    borderRadius: "10px",
+  };
+
   return (
     <Container fluid className="project-section">
       <Particle style={{ position: "absolute", zIndex: 1 }} />
       <Container style={{ position: "relative", zIndex: 2 }}>
         <div className="image-container">
-          <img src={houseImage} alt="House" className="responsive-image"/>
+          <img src={houseImage} alt="House" className="responsive-image" />
         </div>
         {/* Button to open video */}
         <Button
@@ -45,49 +77,49 @@ function HousePricePrediction(props) {
         <h1 className="project-heading">
           <strong className="purple">C.H.A.R.M</strong>
         </h1>
-        <p style={{ color: "white", textAlign:"left"  }}>
-        In today's digital era, having an interactive website is crucial for colleges to provide 
-students with essential information. However, relying solely on a website may not 
-suffice as it may not cover all details or effectively address student queries. While a 
-comment section is an option, it can be cumbersome and time-consuming, leading to 
-delays in responses. With time being a valuable commodity, students expect quick 
-answers, which can't always be provided by humans working round the clock. 
-<br></br>
-<br></br>
-This is where <span className="purple">C.H.A.R.M (Computerized Hardware Automated Reception Manager) </span>
-steps in, leveraging Artificial Intelligence (AI) technology. An AI-powered chatbot like 
-C.H.A.R.M enables seamless interactions between humans and machines using natural 
-language. It can provide varied responses based on the context of the conversation, 
-enhancing user engagement and satisfaction. 
-<br></br>
-<br></br>
-By utilizing C.H.A.R.M, colleges can overcome these challenges without relying on 
-manual intervention. It can provide detailed information about the college, including a map overview, something a 
-human receptionist might struggle to convey comprehensively. 
-Moreover, building a data-driven system for chatbots can be challenging due to the vast 
-amount of data required for development. C.H.A.R.M addresses this by efficiently 
-analyzing data in a short period, offering accurate and relevant responses to user queries. 
-This eliminates the need for heavy investments and long development periods, aligning 
-with the fast-paced nature of modern technology. 
-<br></br>
-<br></br>
-In essence, C.H.A.R.M serves as a sophisticated solution to streamline communication, 
-enhance user experience, and efficiently manage data, ensuring that students receive 
-prompt and accurate information about their college.
-<br></br>
-<br></br>
-C.H.A.R.M can understand and convert 
-human voice into text using the <span className="purple">Google Text to Speech (gtts) </span> library. Additionally, a 
-robust NLP-based machine learning model optimizes responses for a more personalized 
-and efficient user experience.
-<br></br>
-<br></br>
-At its core, C.H.A.R.M is powered by <span className="purple">Raspberry Pi</span>, serving as the hardware base and 
-facilitating seamless integration with <span className="purple">Arduino</span> for motion control. This setup enables 
-precise movements and streamlined processing, enhancing C.H.A.R.M's capabilities in 
-recognizing user queries and generating contextually relevant responses. The integration 
-of an external microphone and camera further enhances its functionality by allowing for 
-<span className="purple"> real-time input processing and image analysis </span>using the face recognition library.
+        <p style={{ color: "white", textAlign: "left" }}>
+          In today's digital era, having an interactive website is crucial for colleges to provide
+          students with essential information. However, relying solely on a website may not
+          suffice as it may not cover all details or effectively address student queries. While a
+          comment section is an option, it can be cumbersome and time-consuming, leading to
+          delays in responses. With time being a valuable commodity, students expect quick
+          answers, which can't always be provided by humans working round the clock.
+          <br></br>
+          <br></br>
+          This is where <span className="purple">C.H.A.R.M (Computerized Hardware Automated Reception Manager) </span>
+          steps in, leveraging Artificial Intelligence (AI) technology. An AI-powered chatbot like
+          C.H.A.R.M enables seamless interactions between humans and machines using natural
+          language. It can provide varied responses based on the context of the conversation,
+          enhancing user engagement and satisfaction.
+          <br></br>
+          <br></br>
+          By utilizing C.H.A.R.M, colleges can overcome these challenges without relying on
+          manual intervention. It can provide detailed information about the college, including a map overview, something a
+          human receptionist might struggle to convey comprehensively.
+          Moreover, building a data-driven system for chatbots can be challenging due to the vast
+          amount of data required for development. C.H.A.R.M addresses this by efficiently
+          analyzing data in a short period, offering accurate and relevant responses to user queries.
+          This eliminates the need for heavy investments and long development periods, aligning
+          with the fast-paced nature of modern technology.
+          <br></br>
+          <br></br>
+          In essence, C.H.A.R.M serves as a sophisticated solution to streamline communication,
+          enhance user experience, and efficiently manage data, ensuring that students receive
+          prompt and accurate information about their college.
+          <br></br>
+          <br></br>
+          C.H.A.R.M can understand and convert
+          human voice into text using the <span className="purple">Google Text to Speech (gtts) </span> library. Additionally, a
+          robust NLP-based machine learning model optimizes responses for a more personalized
+          and efficient user experience.
+          <br></br>
+          <br></br>
+          At its core, C.H.A.R.M is powered by <span className="purple">Raspberry Pi</span>, serving as the hardware base and
+          facilitating seamless integration with <span className="purple">Arduino</span> for motion control. This setup enables
+          precise movements and streamlined processing, enhancing C.H.A.R.M's capabilities in
+          recognizing user queries and generating contextually relevant responses. The integration
+          of an external microphone and camera further enhances its functionality by allowing for
+          <span className="purple"> real-time input processing and image analysis </span>using the face recognition library.
         </p>
 
         {/* Video popup */}
@@ -97,7 +129,7 @@ of an external microphone and camera further enhances its functionality by allow
             style={{
               position: "fixed",
               zIndex: 9999,
-              top: "50px",
+              top: 0,
               left: 0,
               right: 0,
               bottom: 0,
@@ -107,26 +139,15 @@ of an external microphone and camera further enhances its functionality by allow
               alignItems: "center",
             }}
           >
-            <div
-              className="video-container"
-              style={{
-                maxWidth: "640px",
-                maxHeight: "480px",
-                position: "relative",
-                boxShadow: "0px 0px 100px rgba(128, 0, 128, 0.9)",
-                paddingTop: "0px",
-                borderRadius: "10px",
-              }}
-            >
+            <div className="video-container" style={videoContainerStyle}>
               <iframe
-                width="640px"
-                height="480px"
+                className="responsive-iframe"
                 src={videoSource}
                 frameBorder="0"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
                 title="Video"
-                style={{ borderRadius: "10px" }}
+                style={iframeStyle}
               ></iframe>
               <button
                 className="close-btn purple"

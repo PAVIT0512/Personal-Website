@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Button, Carousel } from "react-bootstrap";
 import "../../style.css";
 import Particle from "../Particle";
@@ -13,6 +13,7 @@ const videoSource = `https://drive.google.com/file/d/${videoFileId}/preview`;
 
 function SAM(props) {
   const [showVideo, setShowVideo] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
 
   const openVideo = () => {
     setShowVideo(true);
@@ -20,6 +21,37 @@ function SAM(props) {
 
   const closeVideo = () => {
     setShowVideo(false);
+  };
+
+  const handleResize = () => {
+    setIsLargeScreen(window.innerWidth >= 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const videoContainerStyle = {
+    position: "relative",
+    width: isLargeScreen ? "640px" : "90%",
+    maxWidth: isLargeScreen ? "none" : "640px",
+    paddingBottom: isLargeScreen ? "0" : "56.25%", // 16:9 aspect ratio
+    height: isLargeScreen ? "360px" : "0",
+    overflow: "hidden",
+    borderRadius: "10px",
+    boxShadow: "0px 0px 100px rgba(128, 0, 128, 0.9)",
+  };
+
+  const iframeStyle = {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: isLargeScreen ? "640px" : "100%",
+    height: isLargeScreen ? "360px" : "100%",
+    borderRadius: "10px",
   };
 
   return (
@@ -104,7 +136,7 @@ function SAM(props) {
             style={{
               position: "fixed",
               zIndex: 9999,
-              top: "50px",
+              top: 0,
               left: 0,
               right: 0,
               bottom: 0,
@@ -114,26 +146,15 @@ function SAM(props) {
               alignItems: "center",
             }}
           >
-            <div
-              className="video-container"
-              style={{
-                width: "640px",
-                height: "360px",
-                position: "relative",
-                boxShadow: "0px 0px 100px rgba(128, 0, 128, 0.9)",
-                paddingTop: "0px",
-                borderRadius: "10px",
-              }}
-            >
+            <div className="video-container" style={videoContainerStyle}>
               <iframe
-                width="640"
-                height="360"
+                className="responsive-iframe"
                 src={videoSource}
                 frameBorder="0"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
                 title="Video"
-                style={{ borderRadius: "10px" }}
+                style={iframeStyle}
               ></iframe>
               <button
                 className="close-btn purple"
