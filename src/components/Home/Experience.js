@@ -13,6 +13,14 @@ function Experience() {
         </p>
         <div className="timeline">
           <div className="timeline-item">
+              <div className="timeline-item-marker"></div>
+              <div className="timeline-item-content">
+                <h2>Robotics Software Engineer </h2>
+                <h4>Alphadroid India Private Limited</h4>
+                <p>August 2024 - Present</p>
+              </div>
+            </div>
+          <div className="timeline-item">
             <div className="timeline-item-content">
               <h2>Robotics Engineer Intern </h2>
               <h4>Void Robotics</h4>
